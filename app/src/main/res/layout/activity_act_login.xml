@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".actLogin"
+    android:background="@drawable/side_nav_bar">
+
+    <!--<FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/contenedor_fragment_config"
+        android:background="@drawable/side_nav_bar"
+
+        >
+
+    </FrameLayout>-->
+
+    <ImageView
+        android:id="@+id/ivLogin"
+        android:src="@drawable/logo_salta_ciudad"
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="20sp"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tiEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:layout_below="@id/ivLogin"
+        android:textColorHint="@color/colorHint"
+        android:background="@drawable/esquinas_redondeadas"
+        android:layout_centerHorizontal="true">
+        <EditText
+            android:id="@+id/etEmail"
+            android:ems="11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:backgroundTint="@color/colorTransparente"
+            />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tiPassword"
+        android:layout_below="@id/tiEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:layout_marginTop="10sp"
+        android:textColorHint="@color/colorHint"
+        android:background="@drawable/esquinas_redondeadas"
+        app:passwordToggleEnabled="true">
+        <EditText
+            android:id="@+id/etPassword"
+            android:ems="11"
+            android:inputType="textPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:backgroundTint="@color/colorTransparente"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:text="Iniciar"
+        android:layout_below="@id/tiPassword"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/botones"
+        android:textColor="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+    <TextView
+        android:id="@+id/textViewNvaCuenta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnLogin"
+        android:layout_marginTop="20sp"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="#D60879"
+        android:text="No tengo cuenta. Quiero una." />
+    <TextView
+        android:id="@+id/textViewOlvidoPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewNvaCuenta"
+        android:layout_marginTop="20sp"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="#D60879"
+        android:text="Olvide mi contraseña." />
+
+
+</RelativeLayout>
+
+
+
+

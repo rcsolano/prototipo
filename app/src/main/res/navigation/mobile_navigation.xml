@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.prototipo.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home"/>
+
+    <fragment
+        android:id="@+id/nav_hacer_denuncia"
+        android:name="com.example.prototipo.ui.hacerDenuncia.hacer_denunciaFragment"
+        android:label="@string/menu_hacerDenuncia"
+        tools:layout="@layout/fragment_hacer_denuncia" >
+        <action
+            android:id="@+id/action_nav_hacer_denuncia_to_nav_home"
+            app:destination="@id/nav_home"
+            app:popUpTo="@id/nav_home"
+            app:popUpToInclusive="true">
+
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_mis_denuncias"
+        android:name="com.example.prototipo.ui.misDenuncias.mis_denunciasFragment"
+        android:label="@string/menu_misDenuncias"
+        tools:layout="@layout/fragment_mis_denuncias" >
+        <action
+            android:id="@+id/action_nav_mis_denuncias_to_fragment_unaDenuncia"
+            app:destination="@id/fragment_unaDenuncia" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_mis_infracciones"
+        android:name="com.example.prototipo.ui.misInfracciones.mis_infraccionesFragment"
+        android:label="@string/menu_misInfracciones"
+        tools:layout="@layout/fragment_mis_infracciones" >
+        <action
+            android:id="@+id/action_nav_mis_infracciones_to_fragment_unaDenuncia"
+            app:destination="@id/fragment_unaDenuncia" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_mi_ubicacion"
+        android:name="com.example.prototipo.ui.miUbicacion.UbicacionFragment"
+        android:label="@string/menu_miUbicacion"
+        tools:layout="@layout/ubicacion_fragment" >
+        <!--<action
+            android:id="@+id/action_nav_mi_ubicacion_to_nav_home"
+            app:destination="@id/nav_home" />-->
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_unaDenuncia"
+        android:name="com.example.prototipo.Fragment_unaDenuncia"
+        tools:layout="@layout/fragment_una_denuncia" >
+        <argument
+            android:name="iddenuncia"
+            app:argType="integer" />
+    </fragment>
+    <!--<activity
+        android:id="@+id/actLogin2"
+        android:name="com.example.prototipo.actLogin"
+        android:label="activity_act_login"
+        tools:layout="@layout/activity_act_login" />-->
+
+
+
+    <fragment
+        android:id="@+id/nav_configuracion"
+        android:name="com.example.prototipo.ui.configuracion.configuracionFragment"
+        android:label="Cambiar Contraseña"
+        tools:layout="@layout/fragment_configuracion"
+        >
+        <action
+            android:id="@+id/action_nav_configuracion_to_nav_home"
+            app:destination="@id/nav_home"
+            app:popUpTo="@id/nav_home"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+
+</navigation>

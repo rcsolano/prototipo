@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.hacerDenuncia.hacer_denunciaFragment"
+    android:background="@drawable/side_nav_bar">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/esquinas_redondeadas"
+        android:layout_margin="10sp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp">
+
+
+            <ImageView
+                android:id="@+id/imageView_foto"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/ic_photo_camera_black_24dp" />
+
+            <Button
+                android:id="@+id/btn_cam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/botones"
+                android:text="Tomar Foto"
+                android:textColor="@color/colorFondo" />
+
+            <TextView
+                android:id="@+id/textViewSeleccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:textSize="16sp"
+                android:textColor="@color/colorHint"
+                android:text="Seleccione el tipo de infracción:" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:spinnerMode="dialog"
+
+                android:background="@drawable/style_spinner"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content" />
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Dominio:"
+                app:hintTextAppearance="@style/TextLabel"
+                android:layout_marginTop="10sp"
+                android:textColorHint="@color/colorHint"
+                android:layout_centerHorizontal="true">
+                <EditText
+                    android:id="@+id/etPatente"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:singleLine="true"></EditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <FrameLayout
+                android:id="@+id/flUbicacion"
+                android:layout_width="match_parent"
+                android:layout_height="200sp"
+                android:layout_marginTop="8dp"></FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btnCancelar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/botones"
+                    android:text="Cancelar"
+                    android:textColor="@color/colorFondo"></Button>
+                <Button
+                    android:id="@+id/btnEnviar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/botones"
+                    android:text="Enviar"
+                    android:textColor="@color/colorFondo"></Button>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

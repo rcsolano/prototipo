@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_hacer_denuncia"
+            android:icon="@drawable/hacer_denuncia"
+            android:title="@string/menu_hacerDenuncia" />
+        <item
+            android:id="@+id/nav_mis_denuncias"
+            android:icon="@drawable/mis_denuncias"
+            android:title="@string/menu_misDenuncias" />
+        <item
+            android:id="@+id/nav_mis_infracciones"
+            android:icon="@drawable/mis_infracciones"
+            android:title="Mis infracciones" />
+        <item
+            android:id="@+id/nav_mi_ubicacion"
+            android:icon="@drawable/ubicacion"
+            android:title="@string/menu_miUbicacion" />
+        <item
+            android:id="@+id/nav_configuracion"
+            android:icon="@drawable/configuracion"
+            android:title="@string/menu_configuracion" />
+        <!--<item
+            android:id="@+id/actLogin2"
+            android:icon="@drawable/exit"
+            android:title="@string/menu_close" />-->
+    </group>
+</menu>

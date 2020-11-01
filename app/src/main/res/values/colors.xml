@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#253058</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#e50069</color>
+    <color name="colorHint">#e50069</color>
+
+    <color name="colorItem">#e0e0e0</color>
+    <color name="colorTexto">#1a237e</color>
+    <color name="colorFondo">#FFFFFF</color>
+
+    <color name="colorTxt">#e50069</color>
+    <color name="colorBotones">#172078</color>
+    <color name="colorBotones2">#e50069</color>
+
+    <color name="colorTransparente">#00ff001C</color>
+
+    <color name="colorSpinner">#bdbdbd</color>
+
+
+
+
+</resources>
